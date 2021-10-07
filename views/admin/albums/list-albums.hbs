@@ -1,0 +1,22 @@
+<br><br><br>
+<div class="container">
+  <a href="/addAlbum" class="btn btn-primary">Create albums</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Image</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each albums}}
+      <tr>
+        <td>{{this.title}}</td>
+        <td><img src="assets/img/{{this.img}}" width="100px" alt=""></td>
+        <td>{{this.desc}}</td>
+      </tr>
+      {{/each }}
+    </tbody>
+  </table>
+</div>
